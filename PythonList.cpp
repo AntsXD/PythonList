@@ -19,3 +19,12 @@ PythonList PythonList::operator=(PythonList Other) {
 
 	}
 }
+
+std::ostream& operator<<(std::ostream& out, PythonList list) {
+	out << "[";
+	for (int i = 0; i < list.list.size()-1; ++i) {
+		out << list.list[i] << ",";
+	}
+	out << list.list[list.list.size() - 1] << "]";
+	return out;
+}
