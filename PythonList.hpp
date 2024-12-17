@@ -11,14 +11,16 @@ private:
 	friend std::ostream& operator<<(std::ostream&, PythonList list);
 
 public:
-
+	
 	PythonList(){}
+	PythonList(const PythonList& other);
 	~PythonList();
 
 	void addItem(ListItem* item);
 	
-	PythonList operator=(PythonList Other);
+	PythonList& operator=(const PythonList& Other);
 
+	PythonList operator+(const PythonList&) const;
 	
 };
 

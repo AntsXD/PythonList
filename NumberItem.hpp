@@ -7,9 +7,9 @@
 
 class NumberItem : public ListItem {
 private:
-	int number;
+	double number;
 public:
-	NumberItem(int number = 0): number(number){}
+	NumberItem(double number = 0): number(number){}
 	std::string toString() const override;
 
 	NumberItem* copy() const override;
