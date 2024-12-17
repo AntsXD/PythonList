@@ -8,7 +8,7 @@ std::string NumberItem::toString() const {
 }
 
 
-NumberItem* NumberItem::copy() const {
+ListItem* NumberItem::copy() const {
 	return new NumberItem(*this);
 
 }

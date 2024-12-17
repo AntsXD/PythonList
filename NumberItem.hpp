@@ -12,7 +12,7 @@ public:
 	NumberItem(double number = 0): number(number){}
 	std::string toString() const override;
 
-	NumberItem* copy() const override;
+	ListItem* copy() const override;
 
 };
 

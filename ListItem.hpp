@@ -7,7 +7,7 @@
 
 class ListItem {
 public:
-	
+	virtual ~ListItem() {}
 	virtual std::string toString() const = 0;
 	virtual ListItem* copy() const = 0;
 };

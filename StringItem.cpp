@@ -8,6 +8,6 @@ std::string StringItem::toString() const {
 	return ss.str();
 }
 
-StringItem* StringItem::copy() const {
+ListItem* StringItem::copy() const {
 	return new StringItem(*this);
 }

@@ -10,7 +10,7 @@ private:
 public:
 	StringItem(std::string nom = "") : nom(nom){}
 	std::string toString() const override;
-	StringItem* copy() const override;
+	ListItem* copy() const override;
 };
 
 

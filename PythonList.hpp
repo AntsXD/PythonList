@@ -8,7 +8,7 @@ class PythonList {
 private:
 	std::vector<ListItem*> list;
 
-	friend std::ostream& operator<<(std::ostream&, PythonList list);
+	friend std::ostream& operator<<(std::ostream&, PythonList& list);
 
 public:
 	
@@ -24,7 +24,7 @@ public:
 	
 };
 
-std::ostream& operator<<(std::ostream&, PythonList list);
+std::ostream& operator<<(std::ostream&, PythonList& list);
 
 
 

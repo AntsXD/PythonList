@@ -25,7 +25,7 @@ PythonList PythonList::operator+(const PythonList& other) const {
 
 
 PythonList::~PythonList() {
-	std::cout << "Desctructeur de PythonList appele" << std::endl;
+	std::cout << "Desctructeur de PythonList appele"<<std::endl;
 	for (auto item:list) {
 		delete item;	
 	}
@@ -48,7 +48,7 @@ PythonList& PythonList::operator=(const PythonList& Other) {
 	return *this;
 }
 
-std::ostream& operator<<(std::ostream& out, PythonList list) {
+std::ostream& operator<<(std::ostream& out, PythonList& list) {
 	out << "[";
 	for (int i = 0; i < list.list.size()-1; ++i) {
 		out << *(list.list[i]) << ",";
